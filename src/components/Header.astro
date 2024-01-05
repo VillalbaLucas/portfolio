@@ -1,0 +1,31 @@
+---
+import HeaderPresentation from "./HeaderPresentation.astro";
+
+---
+
+<header class="flex flex-col h-[50%] justify-around">
+  <nav class="flex justify-center">
+    <div class="text-[#bbb]  flex flex-col w-full md:flex-row justify-center text-center md:drop-shadow-md">
+      <a class=" md:rounded-l-full" href="">Home</a>
+      <a href="">About</a>
+      <a href="">Proyects</a>
+      <a class="md:rounded-r-full" href="">Contact</a>
+    </div>
+  </nav>
+  <HeaderPresentation/>
+</header>
+
+
+<style>
+  a {
+    padding: 0 1.5em;
+    background-color: rgba(10, 10, 10, 0.4);
+    border: 1px solid rgba(10, 10, 10, 0.4);
+    backdrop-filter: blur(2px);
+  }
+  a:hover{
+    color: #fff;
+    background-color: rgba(10, 10, 10, 0.5);
+  }
+
+</style>
